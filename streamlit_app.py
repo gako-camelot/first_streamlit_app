@@ -44,7 +44,7 @@ try:
 #     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #     # write your own comment - what does this do?
     back_from_function = get_fruity_vice_data(fruit_choice)
-    streamlit.dataframe(back_from_function)
+#     streamlit.dataframe(back_from_function)
 
 except URLError as e:
   streamlit.error()
@@ -66,7 +66,7 @@ if streamlit.button('Get fruit load list'):
     streamlit.dataframe(my_data_rows)
 
     
-streamlit.stop()
+# streamlit.stop()
 
 def insert_row_snowflake(new_fruit):
     with my_cnx as my_cur:
